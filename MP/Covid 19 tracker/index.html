@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Covid 19 Tracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Covid 19 Tracker</h1>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Covid 19 Tracker</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Covid 19 Tracker</a></li>
+							<li><a href="Vaccine.html">Vaccine Details</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+						<main>
+							<div class="stats">
+							  <div class="latest-report">
+								<div class="state">
+								  <div class="name">Loading...</div>
+								  <div class="change-state">change</div>
+								  <div class="search-state hide">
+									<div class="search-box">
+									  <input
+										type="text"
+										id="search-input"
+										placeholder="Search state..."
+									  />
+									  <img class="close" src="./resources/img/close.svg" alt="" />
+									</div>
+									<div class="state-list"></div>
+								  </div>
+								</div>
+								<div class="total-cases">
+								  <div class="title">Total Cases</div>
+								  <div class="value">0</div>
+								  <div class="new-value">+0</div>
+								</div>
+								<div class="recovered">
+								  <div class="title">Recovered</div>
+								  <div class="value">0</div>
+								  <div class="new-value">+0</div>
+								</div>
+								<div class="deaths">
+								  <div class="title">Deaths</div>
+								  <div class="value">0</div>
+								  <div class="new-value">+0</div>
+								</div>
+							  </div>
+							  <div class="chart">
+								<canvas id="axes_line_chart"></canvas>
+							  </div>
+							</div>
+						  </main>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">July 17, 2020</span>
+										<h2><a href="#">India’s total Covid-19 cases cross 10 lakh. Death toll stands at 
+											25,600.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 15, 2020</span>
+										<h2><a href="#">Phase-1 clinical trials of India’s first indigenous Covid-19 vaccine, 
+											Covaxin, developed by Hyderabad-based pharmaceutical company Bharat Biotech in 
+											collaboration with the National Institute of Virology and Indian Council of Medical 
+											Research, starts across the country.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 8, 2020</span>
+										<h2><a href="#">WHO acknowledges “evidence emerging” of the airborne spread of the novel 
+											coronavirus besides transmission through respiratory droplets.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 6, 2020</span>
+										<h2><a href="#">India overtakes Russia to become third worst coronavirus-hit country, with 
+											6.97 lakh cases. The US had more than 28 lakh cases, while Brazil had close to 16 lakh.
+										</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 1, 2020</span>
+										<h2><a href="#">Unlock 2.0 guidelines come into force, with relaxations in night curfew, 
+											provision for more domestic flights and trains, and clearance for more than five people 
+											in a shop.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 27, 2020</span>
+										<h2><a href="#">Total cases cross 5 lakh. After reporting 100,000 cases on May 19, India 
+											adds 100,000 cases in 15, 10, 8 and 5 days respectively to bring the total number of 
+											cases to half a million.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 13, 2020</span>
+										<h2><a href="#">Health Ministry includes loss of the sense of smell and taste among the 
+											symptoms of Covid-19.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 12, 2020</span>
+										<h2><a href="#">India overtakes UK to become 4th worst coronavirus-hit country, with over 
+											3 lakh cases.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 8, 2020</span>
+										<h2><a href="#">Phased reopening begins, with Unlock 1.0 guidelines coming into force, as 
+											India records more than 2,50,000 COVID-19 cases and 7200 deaths. Centre allows re-opening 
+											of malls, hotels, restaurants and places of worship.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 5, 2020</span>
+										<h2><a href="#">WHO changes its guidelines on using face masks, advising that face masks should 
+											be worn in public to stop the spread of Covid-19.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 25, 2020</span>
+										<h2><a href="#">Domestic flight services resume in a calibrated manner, with only 30% of 
+											regular schedules.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 19, 2020</span>
+										<h2><a href="#">Total Covid-19 cases in India cross 1 lakh.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 17, 2020</span>
+										<h2><a href="#">MHA extends lockdown till May 31, allows inter-state movement of passenger 
+											vehicles, buses with mutual consent of states. With nearly 86,000 cases, India overtakes 
+											China in terms of the total number of cases reported. Finance Minister Nirmala Sitharaman 
+											announces Tranche 5 of Atmanirbhar package of Rs 40,000 crore (0.2% of GDP). Limit of state 
+											borrowings increased to 5% from 3% of GSDP, MGNREGA gets additional Rs 40,000 crore.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 16, 2020</span>
+										<h2><a href="#">Finance Minister Nirmala Sitharaman announces Tranche 4 of Atmanirbhar package 
+											of Rs 8,100 crore (0.04% of GDP). Major policies include hiking of defence FDI to 74% from 
+											49% and viability gap funding (VGP) for social infrastructure.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 15, 2020</span>
+										<h2><a href="#">Finance Minister Nirmala Sitharaman announces Tranche 3 of Atmanirbhar package 
+											of Rs 1.5 lakh crore (0.75% of GDP). It includes financing facility for agri infra projects 
+											worth Rs 1,00,000 crore. Besides, govt decides to formulate a central law that will not 
+											bind farmers to sell crop only to licensed traders in the APMC mandis.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 14, 2020</span>
+										<h2><a href="#">Finance Minister Nirmala Sitharaman announces Tranche 2 of Atmanirbhar package 
+											of Rs 3.10 lakh crore (1.55% of GDP). It includes free food grain supply to migrants for 
+											2 months worth Rs 3,500 crore and special liquidity scheme to provide Rs 10,000 working 
+											capital to 50 lakh street vendors at Rs 5,000 crore.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 13, 2020</span>
+										<h2><a href="#">Finance Minister Nirmala Sitharaman announces Tranche 1 of Atmanirbhar package 
+											of Rs 5.94 lakh crore (2.97% of GDP). It includes collateral free automatic loans to MSMEs, 
+											100% credit guarantee cover to banks, NBFCs worth Rs 3 lakh crore, subordinate debt to 
+											stressed MSMEs worth Rs 20,000 crore, equity infusion for MSMEs worth Rs 50,000 crore and 
+											EPF support for 3 months worth Rs 2,500 crore.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 12, 2020</span>
+										<h2><a href="#">PM Narendra Modi announces Rs 20 lakh crore Atmanirbhar package, says size 
+											is 10% of GDP, including announcements made by RBI earlier.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 7, 2020</span>
+										<h2><a href="#">Phase 1 of Vande Bharat mission to evacuate nearly 15,000 Indians stranded 
+											abroad begins. 50,000 confirmed cases reported in India.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 1, 2020</span>
+										<h2><a href="#">Home Ministry extends lockdown for two weeks starting May 4 with zone-wise 
+											restrictions. Divides districts into red, orange and green zones on the basis of cases. 
+											Shramik Special trains started for stranded migrant workers.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 29, 2020</span>
+										<h2><a href="#">India records 1,000 confirmed deaths.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2020</span>
+										<h2><a href="#">Prime Minister Modi extends the 21-day lockdown to May 3. 10,000 confirmed cases 
+											are recorded.  MHA issues “National Directives” for COVID-19 management, makes wearing a face 
+											cover mandatory in work and public spaces.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 6, 2020</span>
+										<h2><a href="#">The death toll in India crosses the 100-mark.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 5, 2020</span>
+										<h2><a href="#">Upon PM Modi’s call, citizens light diyas, candles, torches and flashlights to 
+											show solidarity with Covid-19 frontline healthcare workers.</a></h2>
+									</header>
+								</article>
+								<article> 
+									<header>
+										<span class="date">March 26, 2020</span>
+										<h2><a href="#">On the second day of the lockdown, India witnesses migrant labourers 
+											walking hundreds of kilometres along highways to reach their native villages.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 25, 2020</span>
+										<h2><a href="#">A nationwide lockdown across India is imposed till April 14, with
+											only essential services kept out of its purview. Tokyo Olympics postponed for a year 
+											until 2021.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 22, 2020</span>
+										<h2><a href="#">Upon a call by Prime Minister Narendra Modi, a 14-hour voluntary lockdown 
+											called ‘Janata Curfew’ was observed in India. Prime Minister Boris Johnson imposes 
+											lockdown in Britain.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 15, 2020</span>
+										<h2><a href="#">Total number of Covid-19 cases touches 100 as Maharashtra overtakes Kerala 
+											with maximum infections. CDC recommends no gatherings of 50 or more people in the US.
+										</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 12, 2020</span>
+										<h2><a href="#">India reports first fatality due to Covid-19 after a 76-year-old man from 
+											Kalburgi, Karnataka, dies. India also bans entry of foreigners and suspends all visas 
+											from March 13 to April 15.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 11, 2020</span>
+										<h2><a href="#">WHO declares Covid-19 a pandemic, which is defined “an epidemic that has 
+											spread over several countries or continents, and most people do not have immunity 
+											against it”. At this point, more than 1,21,000 people were infected and over 4,300 died 
+											globally. US blocks visitors from Europe.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 10, 2020</span>
+										<h2><a href="#">A total of 50 Covid-19 cases reported in India, with infections	doubling 
+											in just 4 days. Thirteen states and UTs in India have reported at least one Covid-19 
+											case.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">February 11, 2020</span>
+										<h2><a href="#">WHO announces that the disease caused by novel coronavirus will be called 
+											‘Covid-19’. The new coronavirus was named SARS-CoV-2.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">February 4, 2020</span>
+										<h2><a href="#">India cancels existing visas for Chinese and foreigners who had 
+											visited China in the last two weeks as the death toll in China exceeds that of the 
+											2002-03 SARS outbreak. About 3,711 people, including 138 Indians, were quarantined aboard 
+											the Diamond Princess cruise ship docked in Japan after a passenger, who had disembarked at 
+											Hong Kong, are found to be infected with the virus.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">February 3, 2020</span>
+										<h2><a href="#">Kerala government declares coronavirus a state calamity after two more cases 
+											were reported in Alappuzha and Kasaragod district.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">January 30, 2020</span>
+										<h2><a href="#">WHO says the crisis is a global emergency of international concern as the death 
+											toll in China jumps to 170, with 7,711 cases reported in the country. More than 7,500 cases 
+											were reported in 20 countries of the world.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">January 30, 2020</span>
+										<h2><a href="#">India’s first Covid-19 patient reported in Kerala’s Thrissur district.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">January 13, 2020</span>
+										<h2><a href="#">A Chinese woman is quarantined in Thailand, making it the first detection of the 
+											virus outside China.</a></h2>
+									</header>
+								</article>
+								<article>
+									<header>
+										<span class="date">December 31, 2019</span>
+										<h2><a href="#">China alerts WHO of 27 cases of “viral pneumonia” in Wuhan.</a></h2>
+									</header>
+								</article>
+							</section>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+			<script src="assets/js/covid details countries.js"></script>
+			<script src="assets/js/covid details app.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
